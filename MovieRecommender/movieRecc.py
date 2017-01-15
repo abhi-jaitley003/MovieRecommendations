@@ -142,8 +142,7 @@ class MovieRecommendations :
     
 
 mov1 = MovieRecommendations('./ml-100k/u.item','./ml-100k/u.data')
-#mov1 = MovieRecommendations('/Users/abhishekjaitley/Documents/ml-100k/u.item','/Users/abhishekjaitley/Documents/ml-100k/u.data')
-
+#merge the movies database and the user ratings data to create a matrix of user rows and the movies as columns and each cell represents a rating
 mov1.creatUserRatingMatrix()
-
+#find the top recommendations for user with id 5
 mov1.recommendMovies(5)
